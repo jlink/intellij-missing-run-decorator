@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+test {
+    useJUnitPlatform {
+        includeEngines "jqwik"
+    }
+}
+
+dependencies {
+    testImplementation("net.jqwik:jqwik:1.2.2")
+
+    // To work around IntelliJ bug to not provide run test annotation on properties
+    // testRuntimeOnly("org.junit.jupiter:junit-jupiter-api:5.5.2")
+
+}
