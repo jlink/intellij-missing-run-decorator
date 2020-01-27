@@ -1,2 +1,1 @@
-# intellij-missing-run-decorator
-Revealing intellij bug
+Revealing intellij bug: https://youtrack.jetbrains.com/issue/IDEA-231482
